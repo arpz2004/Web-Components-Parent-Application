@@ -1,2 +1,2 @@
-<web-component [message]="inputValue"></web-component>
-<input [(ngModel)]="inputValue">
+<web-component [message]="messageIn"></web-component>
+<input [(ngModel)]="inputValue" (ngModelChange)="setMessageIn($event)">
